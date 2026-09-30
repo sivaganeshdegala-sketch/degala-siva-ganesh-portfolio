@@ -1,0 +1,19 @@
+{
+  "name": "degala-siva-ganesh-portfolio",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "node scripts/generate-config.js && node scripts/build-static.js && http-server dist -c-1 -e html",
+    "build": "node scripts/generate-config.js && node scripts/build-static.js",
+    "preview": "http-server dist -c-1 -e html"
+  },
+  "dependencies": {
+    "dotenv": "^16.6.1"
+  },
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
