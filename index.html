@@ -1160,6 +1160,59 @@
         @media(hover:none) { .hero-composition .hero-pointer-glow { opacity:.55; } }
         @media(prefers-reduced-motion:reduce) { .hero-photo-card,.hero-photo-card:hover,.hero-float-tag,.hero-composition a[href="#projects"],.hero-composition a[href="#contact"],.hero-composition .grid > div:last-child > div:nth-last-child(2) > div { transition:none !important; } .hero-stage:hover > div[aria-hidden="true"] { transform:none !important; } .hero-composition a::after { display:none !important; } }
         @media(prefers-reduced-motion:reduce) { .name-intro,.name-intro *,.portfolio-enter,.hero-float-tag--year { animation:none !important; } .name-intro { display:none !important; } }
+        .admin-dashboard {
+            background: radial-gradient(ellipse at 82% 0%, rgba(124,58,237,.14), transparent 36%), linear-gradient(180deg,#0b0a0f,#09080d 62%,#0c0b10) !important;
+            color:#e3e0eb !important;
+            font-family:'Space Grotesk',sans-serif !important;
+        }
+        .admin-dashboard .admin-header { flex:0 0 auto; gap:18px; border-color:rgba(255,255,255,.12) !important; background:rgba(9,8,13,.86) !important; box-shadow:0 12px 45px rgba(0,0,0,.24); backdrop-filter:blur(18px); }
+        .admin-dashboard .admin-brand { color:#f3f0f8 !important; font-family:'Syne',sans-serif !important; font-size:20px !important; }
+        .admin-dashboard .admin-status { border:1px solid rgba(167,139,250,.32) !important; border-radius:999px !important; background:rgba(124,58,237,.14) !important; color:#c4b5fd !important; }
+        .admin-dashboard .admin-actions { display:flex; align-items:center; gap:10px; }
+        .admin-dashboard .admin-actions button,.admin-dashboard .admin-content button { min-height:40px; border-radius:9px !important; transition:transform .22s ease,border-color .22s ease,background-color .22s ease,color .22s ease,box-shadow .22s ease !important; }
+        .admin-dashboard .admin-actions button:first-child,.admin-dashboard .admin-content button:not([class*="bg-white"]):not([type="submit"]) { border-color:rgba(255,255,255,.16) !important; color:#c4bdd3 !important; }
+        .admin-dashboard .admin-actions button:last-child,.admin-dashboard .admin-content button.bg-white,.admin-dashboard .admin-content button[type="submit"] { border:1px solid #7c3aed !important; background:#7c3aed !important; color:#fff !important; box-shadow:0 8px 24px rgba(124,58,237,.2); }
+        .admin-dashboard button:hover { transform:translateY(-1px); border-color:#a78bfa !important; box-shadow:0 8px 24px rgba(124,58,237,.14); }
+        .admin-dashboard .admin-actions button:last-child:hover,.admin-dashboard .admin-content button.bg-white:hover,.admin-dashboard .admin-content button[type="submit"]:hover { background:#6d28d9 !important; }
+        .admin-dashboard .admin-sidebar { flex:0 0 248px; width:248px; padding:20px 14px !important; border-color:rgba(255,255,255,.11) !important; background:rgba(13,12,18,.76) !important; }
+        .admin-dashboard .admin-sidebar > button { min-height:46px; border:1px solid transparent; border-radius:9px !important; color:#aaa4b8 !important; font:600 10px 'JetBrains Mono',monospace !important; letter-spacing:.13em !important; transition:background .22s ease,border-color .22s ease,color .22s ease,transform .22s ease !important; }
+        .admin-dashboard .admin-sidebar > button:hover { border-color:rgba(167,139,250,.2); background:rgba(124,58,237,.08) !important; color:#f2eff8 !important; }
+        .admin-dashboard .admin-sidebar > button[class*="bg-neutral-800 text-white"] { border-color:rgba(167,139,250,.28); background:rgba(124,58,237,.18) !important; color:#f3f0f8 !important; }
+        .admin-dashboard .admin-content { min-width:0; padding:clamp(22px,4vw,48px) !important; background:transparent !important; scrollbar-color:rgba(167,139,250,.45) #0b0a0f; }
+        .admin-dashboard .admin-content > div { width:100%; max-width:1040px; margin:0 auto; }
+        .admin-dashboard .admin-content h2 { margin:0 0 26px !important; color:#f3f0f8 !important; font:700 clamp(24px,3vw,34px)/1.15 'Syne',sans-serif !important; }
+        .admin-dashboard .admin-content label { color:#aaa4b8 !important; font:500 10px/1.5 'JetBrains Mono',monospace !important; letter-spacing:.09em; text-transform:uppercase; }
+        .admin-dashboard .admin-content input:not([type="checkbox"]),.admin-dashboard .admin-content textarea { width:100%; min-height:44px; margin-top:8px; padding:12px 14px !important; border:1px solid rgba(255,255,255,.13) !important; border-radius:9px !important; outline:none; background:#111016 !important; color:#f2eff8 !important; font:400 13px/1.55 'Space Grotesk',sans-serif !important; letter-spacing:normal; text-transform:none; transition:border-color .2s ease,box-shadow .2s ease,background .2s ease !important; }
+        .admin-dashboard .admin-content textarea { min-height:110px; resize:vertical; }
+        .admin-dashboard .admin-content input::placeholder,.admin-dashboard .admin-content textarea::placeholder { color:#777181 !important; }
+        .admin-dashboard .admin-content input:focus,.admin-dashboard .admin-content textarea:focus { border-color:rgba(167,139,250,.72) !important; background:#14111b !important; box-shadow:0 0 0 3px rgba(124,58,237,.12) !important; }
+        .admin-dashboard .admin-content input[type="checkbox"] { accent-color:#7c3aed; width:16px; height:16px; }
+        .admin-dashboard .admin-content .max-w-2xl > .space-y-4 { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:18px 20px; }
+        .admin-dashboard .admin-content .max-w-2xl > .space-y-4 > div:has(textarea) { grid-column:1/-1; }
+        .admin-dashboard .admin-content .max-w-2xl > button { margin-top:24px; }
+        .admin-dashboard .admin-content form.grid { gap:18px !important; padding:clamp(18px,3vw,28px) !important; border:1px solid rgba(255,255,255,.13) !important; border-radius:13px !important; background:linear-gradient(145deg,rgba(24,20,34,.94),rgba(13,12,18,.98)) !important; box-shadow:0 18px 50px rgba(0,0,0,.2); }
+        .admin-dashboard .admin-content .group,.admin-dashboard .admin-content > div > .p-4.border { border-color:rgba(255,255,255,.12) !important; border-radius:12px !important; background:linear-gradient(145deg,rgba(22,19,29,.92),rgba(13,12,17,.96)) !important; transition:transform .25s ease,border-color .25s ease,box-shadow .25s ease !important; }
+        .admin-dashboard .admin-content .group:hover,.admin-dashboard .admin-content > div > .p-4.border:hover { transform:translateY(-2px); border-color:rgba(167,139,250,.4) !important; box-shadow:0 16px 40px rgba(0,0,0,.24),0 0 24px rgba(124,58,237,.08); }
+        .admin-dashboard .admin-content .text-red-400 { color:#f0a0b4 !important; }
+        .admin-dashboard :focus-visible { outline:2px solid #a78bfa !important; outline-offset:3px; }
+        @media(max-width:760px) { .admin-dashboard .admin-header { align-items:flex-start; padding:16px !important; } .admin-dashboard .admin-brand { font-size:17px !important; } .admin-dashboard .admin-sidebar { flex-basis:210px; width:210px; } .admin-dashboard .admin-content { padding:22px !important; } }
+        @media(max-width:600px) {
+            .admin-dashboard .admin-header { flex-wrap:wrap; }
+            .admin-dashboard .admin-header > div:first-child { min-width:100%; }
+            .admin-dashboard .admin-actions { width:100%; }
+            .admin-dashboard .admin-actions button { flex:1; }
+            .admin-dashboard > .flex-1 { flex-direction:column; }
+            .admin-dashboard .admin-sidebar { display:flex; flex:0 0 auto; width:100%; gap:8px !important; padding:10px 12px !important; overflow-x:auto; border-right:0 !important; border-bottom:1px solid rgba(255,255,255,.11) !important; }
+            .admin-dashboard .admin-sidebar > button { flex:1 0 auto; width:auto !important; min-width:96px; padding:10px 12px !important; text-align:center; }
+            .admin-dashboard .admin-content { min-height:0; padding:18px 14px 28px !important; }
+            .admin-dashboard .admin-content .max-w-2xl > .space-y-4 { grid-template-columns:1fr; gap:14px; }
+            .admin-dashboard .admin-content .max-w-2xl > .space-y-4 > div:has(textarea) { grid-column:auto; }
+            .admin-dashboard .admin-content .flex.items-center.justify-between { align-items:flex-start; }
+            .admin-dashboard .admin-content .flex.flex-wrap.items-center.justify-between { align-items:flex-start; }
+            .admin-dashboard .admin-content .flex.flex-wrap.gap-2 { width:100%; }
+            .admin-dashboard .admin-content .flex.flex-wrap.gap-2 button { flex:1 1 auto; }
+        }
+        @media(prefers-reduced-motion:reduce) { .admin-dashboard .admin-content .group,.admin-dashboard .admin-content form.grid { transition:none !important; } }
     </style>
 </head>
 <body class="bg-[#070707] text-neutral-200 selection:bg-white selection:text-black antialiased bg-grid-pattern">
@@ -1478,6 +1531,7 @@
                         const { data, error } = await supabaseClient.functions.invoke("coding-stats");
                         if (!alive) return;
                         if (error || !data) {
+                            setCodingStats({});
                             setCodingStatsMessage("Stats sync is unavailable; checking again in 5 minutes.");
                             return;
                         }
@@ -1487,7 +1541,10 @@
                             ? "Synced from public profiles · checks again in 5 minutes"
                             : "A profile count is temporarily unavailable · checking again in 5 minutes");
                     } catch {
-                        if (alive) setCodingStatsMessage("Stats sync is unavailable; checking again in 5 minutes.");
+                        if (alive) {
+                            setCodingStats({});
+                            setCodingStatsMessage("Stats sync is unavailable; checking again in 5 minutes.");
+                        }
                     }
                 };
                 syncCodingStats();
@@ -2393,14 +2450,14 @@
             };
 
             return (
-                <div className="fixed inset-0 z-[100] bg-[#070707] flex flex-col font-mono text-sm animate-toast overflow-hidden">
+                <div className="fixed inset-0 z-[100] bg-[#070707] flex flex-col font-mono text-sm animate-toast overflow-hidden admin-dashboard">
                     {/* Admin Header */}
-                    <header className="px-6 py-4 border-b border-neutral-800 flex justify-between items-center bg-neutral-950">
+                    <header className="px-6 py-4 border-b border-neutral-800 flex justify-between items-center bg-neutral-950 admin-header">
                         <div className="flex items-center space-x-4">
-                            <span className="text-white font-syne font-bold text-xl">System Admin Dashboard</span>
-                            <span className="px-2 py-1 rounded bg-emerald-900/50 text-emerald-400 text-[10px] border border-emerald-800">SUPABASE</span>
+                            <span className="text-white font-syne font-bold text-xl admin-brand">Portfolio Admin</span>
+                            <span className="px-2 py-1 rounded bg-emerald-900/50 text-emerald-400 text-[10px] border border-emerald-800 admin-status">SUPABASE</span>
                         </div>
-                        <div className="flex space-x-3">
+                        <div className="flex space-x-3 admin-actions">
                             <button onClick={onLogout} className="px-4 py-2 rounded border border-neutral-700 text-neutral-300 hover:text-white text-xs">Logout</button>
                             <button onClick={onClose} className="px-4 py-2 rounded bg-white text-black font-bold text-xs">Close Dashboard</button>
                         </div>
@@ -2408,8 +2465,8 @@
 
                     <div className="flex flex-1 overflow-hidden">
                         {/* Sidebar Tabs */}
-                        <div className="w-64 border-r border-neutral-800 bg-neutral-900/30 p-4 space-y-2">
-                                    {['profile', 'messages', 'projects'].map(t => (
+                        <div className="w-64 border-r border-neutral-800 bg-neutral-900/30 p-4 space-y-2 admin-sidebar">
+                                    {['profile', 'projects', 'messages'].map(t => (
                                 <button key={t} onClick={() => setTab(t)}
                                     className={`w-full text-left px-4 py-3 rounded-lg uppercase tracking-wider text-xs transition-colors ${tab === t ? 'bg-neutral-800 text-white font-bold' : 'text-neutral-500 hover:bg-neutral-800/50 hover:text-neutral-300'}`}>
                                             {t} {t === 'messages' && `(${messages.length})`}
@@ -2418,7 +2475,7 @@
                         </div>
 
                         {/* Content Area */}
-                        <div className="flex-1 overflow-y-auto p-8 bg-[#0a0a0a]">
+                        <div className="flex-1 overflow-y-auto p-8 bg-[#0a0a0a] admin-content">
                             {loadError && <p role="alert" className="text-red-400 text-sm mb-6">{loadError}</p>}
                             {tab === 'profile' && (
                                 <div className="max-w-2xl space-y-6">
