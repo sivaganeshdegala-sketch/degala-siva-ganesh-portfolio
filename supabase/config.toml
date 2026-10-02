@@ -1,2 +1,5 @@
 [functions.contact-notification]
 verify_jwt = false
+
+[functions.coding-stats]
+verify_jwt = false
